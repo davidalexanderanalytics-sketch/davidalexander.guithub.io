@@ -1,0 +1,4 @@
+﻿file;rows;cols
+transacciones_brutas.csv;1040;15
+maestro_cuentas.csv;10;5
+maestro_clientes.csv;100;7

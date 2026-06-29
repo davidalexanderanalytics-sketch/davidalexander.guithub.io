@@ -1,0 +1,529 @@
+/* =========================================================
+   INDEX
+   =========================================================
+
+  Header
+  Navigation
+  Labels / Kicker
+  Hero
+  Hero Profile
+  Buttons
+  Cards
+  Hero Card
+  Sections
+  Project Cards
+  Tags
+  Contact
+  Social Links
+  Project Story
+  Card Tools
+  Card Media
+  Footer
+  Responsive
+
+*/
+
+/* ---------------------------------------------------------
+   Header
+   --------------------------------------------------------- */
+
+   .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    backdrop-filter: blur(18px);
+    background: rgba(17, 17, 17, 0.72);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  
+  .header-inner,
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 76px;
+  }
+  
+  .logo {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Navigation
+     --------------------------------------------------------- */
+  
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .site-nav a {
+    color: var(--color-text-muted);
+    transition: color var(--transition);
+  }
+  
+  .site-nav a:hover {
+    color: var(--color-text);
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Labels / Kicker
+     --------------------------------------------------------- */
+  
+  .eyebrow,
+  .section-kicker,
+  .card-label,
+  .project-type {
+    color: var(--color-accent);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  
+  .section-kicker {
+    margin-bottom: 0.8rem;
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Hero
+     --------------------------------------------------------- */
+  
+  .hero-text {
+    max-width: 60ch;
+    font-size: 1.05rem;
+  }
+  
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 2rem;
+  }
+  
+
+  /* ---------------------------------------------------------
+     Hero Profile
+     --------------------------------------------------------- */
+
+     .hero-profile {
+      overflow: hidden;
+      padding: 0;
+    }
+    
+    .hero-profile-media {
+      position: relative;
+      min-height: 420px;
+    }
+    
+    .hero-profile-media img {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .hero-profile-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 1rem;
+      padding: 1.4rem;
+      background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.08),
+        rgba(17, 17, 17, 0.88)
+      );
+    }
+    
+    .tag-list-compact {
+      margin-top: 0;
+      gap: 0.55rem;
+    }
+    
+    .tag-list-compact span {
+      padding: 0.55rem 0.85rem;
+      font-size: 0.82rem;
+    }
+    
+    @media (max-width: 700px) {
+      .hero-profile-media,
+      .hero-profile-media img {
+        min-height: 360px;
+      }
+    }
+
+  
+  /* ---------------------------------------------------------
+     Buttons
+     --------------------------------------------------------- */
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.9rem 1.4rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid transparent;
+    font-weight: 600;
+    transition: transform var(--transition), background var(--transition), border-color var(--transition), color var(--transition);
+  }
+  
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+  
+  .btn-primary {
+    background: var(--color-primary);
+    color: #ffffff;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .btn-primary:hover {
+    background: var(--color-primary-hover);
+  }
+  
+  .btn-secondary {
+    border-color: rgba(255, 255, 255, 0.16);
+    background: transparent;
+    color: var(--color-text);
+  }
+  
+  .btn-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Cards
+     --------------------------------------------------------- */
+  
+  .card {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+      var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-deep);
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Hero Card
+     --------------------------------------------------------- */
+  
+  .hero-card {
+    padding: 1.4rem;
+  }
+  
+  .stats {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .stats li {
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    background: var(--color-surface-2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .stats strong {
+    display: block;
+    font-size: 1.15rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .stats span {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Sections
+     --------------------------------------------------------- */
+  
+  .section-text {
+    max-width: 58ch;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Project Cards
+     --------------------------------------------------------- */
+  
+  .project-grid {
+    margin-top: 2rem;
+  }
+  
+  .project-card {
+    padding: 1.4rem;
+    display: grid;
+    gap: 0.9rem;
+  }
+  
+  .project-card p {
+    color: rgba(255, 255, 255, 0.78);
+  }
+  
+  .project-card a {
+    color: var(--color-text);
+    width: fit-content;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .project-card a:hover {
+    border-bottom-color: var(--color-accent);
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Tags
+     --------------------------------------------------------- */
+  
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2rem;
+  }
+  
+  .tag-list span {
+    padding: 0.7rem 1rem;
+    border-radius: var(--radius-pill);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--color-text);
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Contact
+     --------------------------------------------------------- */
+  
+  .contact-box {
+    padding: 2rem;
+  }
+  
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .contact-links a {
+    color: var(--color-text);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  }
+  
+  .contact-links a:hover {
+    border-bottom-color: var(--color-accent);
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Social Links
+     --------------------------------------------------------- */
+  
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.95rem 1.1rem;
+    border-radius: var(--radius-pill);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--color-text);
+    transition: transform var(--transition), background var(--transition), border-color var(--transition);
+  }
+  
+  .social-link:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    color: var(--color-accent);
+    flex: 0 0 auto;
+  }
+  
+  .social-link span {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .secondary-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.1rem;
+    border-radius: var(--radius-pill);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--color-text);
+    transition: transform var(--transition), background var(--transition), border-color var(--transition);
+  }
+  
+  .secondary-link:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+
+  .github-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    flex: 0 0 auto;
+  }
+
+  .workbench-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    color: var(--color-text);
+    flex: 0 0 auto;
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Project Story
+     --------------------------------------------------------- */
+  
+  .project-story {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  
+  .story-block {
+    display: grid;
+    gap: 1.25rem;
+    padding: 1.2rem;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  .story-text h3 {
+    margin-bottom: 0.75rem;
+  }
+  
+  .story-image img {
+    width: 100%;
+    border-radius: var(--radius-md);
+    display: block;
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Card Tools
+     --------------------------------------------------------- */
+  
+  .tool-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .tool-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+    opacity: 0.95;
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Card Media
+     --------------------------------------------------------- */
+  
+  .card-media {
+    position: relative;
+    overflow: hidden;
+    min-height: 280px;
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+  }
+  
+  .card-bg-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.20),
+      rgba(17, 17, 17, 0.88)
+    );
+    z-index: 1;
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 0.9rem;
+    height: 100%;
+    padding: 1.4rem;
+    justify-content: end;
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Footer
+     --------------------------------------------------------- */
+  
+  .site-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 1.4rem 0;
+  }
+  
+  
+  /* ---------------------------------------------------------
+     Responsive
+     --------------------------------------------------------- */
+  
+  @media (min-width: 900px) {
+    .story-block {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }

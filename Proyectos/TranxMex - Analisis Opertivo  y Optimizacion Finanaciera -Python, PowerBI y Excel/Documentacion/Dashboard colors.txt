@@ -1,0 +1,8 @@
+violeta      #9013FE
+gris clarito #212D3F
+gris oscuro  #1A212D
+azul         #008FEC
+rojo suabe   #FC4D64
+rojo fuerte  #F13636
+verde        #3EBD41
+amarillo     #FFBA2F

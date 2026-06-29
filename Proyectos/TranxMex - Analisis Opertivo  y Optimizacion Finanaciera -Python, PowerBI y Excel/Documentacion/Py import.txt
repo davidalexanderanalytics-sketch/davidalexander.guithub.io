@@ -1,0 +1,9 @@
+pip install plotly
+pip install seaborn
+pip install --upgrade nbformat ipython
+pip install openpyxl matplotlib pandas
+
+PowerShell
+py -m pip install plotly
+
+py -m pip --version

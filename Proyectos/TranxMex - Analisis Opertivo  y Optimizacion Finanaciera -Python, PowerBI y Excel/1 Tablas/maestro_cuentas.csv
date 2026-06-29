@@ -1,0 +1,11 @@
+﻿cuenta_id;categoria;cuenta_contable;descripcion_cuenta;naturaleza
+CTA-001;Ventas;1;Cuenta de ventas;Ingreso
+CTA-002;Servicios;2;Cuenta de servicios;Ingreso
+CTA-003;Consultoría;3;Cuenta de consultoría;Ingreso
+CTA-004;Nómina;4;Cuenta de nómina;Gasto
+CTA-005;Marketing;5;Cuenta de marketing;Gasto
+CTA-006;Suministros;6;Cuenta de suministros;Gasto
+CTA-007;Impuestos;7;Cuenta de impuestos;Gasto
+CTA-008;Logística;8;Cuenta de logística;Gasto
+CTA-009;Financiación;9;Cuenta de financiación;Ingreso
+CTA-010;Otros;10;Cuenta de otros;Gasto

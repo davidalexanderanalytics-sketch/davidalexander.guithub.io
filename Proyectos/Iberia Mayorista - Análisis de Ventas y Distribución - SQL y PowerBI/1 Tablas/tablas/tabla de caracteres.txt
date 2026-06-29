@@ -1,0 +1,9 @@
+Al extraer las tablas desde Workbench a Excel, ocurren cambios en letras con tilde y la letra 'ñ'
+
+Ã¡ - a - á
+Ã© - e - é
+Ã­ - i - í
+Ã³ - o - ó
+Ãº - u - ú
+
+Ã± - ni - ñ

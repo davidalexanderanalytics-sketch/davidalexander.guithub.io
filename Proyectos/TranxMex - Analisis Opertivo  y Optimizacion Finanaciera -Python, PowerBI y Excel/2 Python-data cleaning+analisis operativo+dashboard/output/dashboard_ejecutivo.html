@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Ejecutivo Financiero</title>
+    <style>
+        :root {
+            --bg: #0f1115;
+            --bg-soft: #151922;
+            --surface: #1a1f2b;
+            --surface-2: #202635;
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #f5f7fb;
+            --muted: #a7b0c0;
+            --accent: #0057ff;
+            --accent-2: #3f7cff;
+            --shadow: 0 18px 50px rgba(0, 0, 0, 0.32);
+            --radius: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 32px;
+            font-family: Arial, sans-serif;
+            background:
+                radial-gradient(circle at top right, rgba(0, 87, 255, 0.14), transparent 28%),
+                radial-gradient(circle at bottom left, rgba(63, 124, 255, 0.08), transparent 24%),
+                var(--bg);
+            color: var(--text);
+        }
+
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            gap: 24px;
+        }
+
+        .header,
+        .section {
+            background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)), var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .header {
+            padding: 26px;
+        }
+
+        .header h1 {
+            margin: 0 0 8px;
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: -0.03em;
+        }
+
+        .header p {
+            margin: 0;
+            color: var(--muted);
+            max-width: 72ch;
+            line-height: 1.6;
+        }
+
+        .section {
+            padding: 24px;
+        }
+
+        .section h2 {
+            margin: 0 0 18px;
+            font-size: 1.3rem;
+            letter-spacing: -0.02em;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            background: var(--bg-soft);
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+
+        .table th,
+        .table td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .table th {
+            background: rgba(0, 87, 255, 0.14);
+            color: var(--text);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .table td {
+            color: #d9e1f2;
+            background: rgba(255, 255, 255, 0.01);
+        }
+
+        .table tr:nth-child(even) td {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .table tr:hover td {
+            background: rgba(0, 87, 255, 0.08);
+        }
+
+        .section p,
+        li {
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .section ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .plotly-container {
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--bg-soft);
+            padding: 8px;
+        }
+
+        .section img {
+            max-width: 100%;
+            border-radius: 14px;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 16px;
+            }
+
+            .header,
+            .section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>Dashboard Ejecutivo Financiero</h1>
+            <p>Resumen de resultados, eficiencia, concentración y focos estratégicos del negocio.</p>
+        </div>
+
+        <div class="section">
+            <h2>KPIs recomendados</h2>
+            <div class="table-wrap">
+                <table class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Métrica</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total Ingresos</td>
+      <td>€4,697,876</td>
+    </tr>
+    <tr>
+      <td>Total Gastos</td>
+      <td>€5,009,533</td>
+    </tr>
+    <tr>
+      <td>Saldo Neto</td>
+      <td>€-311,658</td>
+    </tr>
+    <tr>
+      <td>Margen (%)</td>
+      <td>-6.6%</td>
+    </tr>
+    <tr>
+      <td>Transacciones</td>
+      <td>1,002</td>
+    </tr>
+    <tr>
+      <td>Pagadas (%)</td>
+      <td>70.0%</td>
+    </tr>
+    <tr>
+      <td>Categoría más rentable</td>
+      <td>Marketing</td>
+    </tr>
+    <tr>
+      <td>Canal más eficiente</td>
+      <td>Bizum</td>
+    </tr>
+    <tr>
+      <td>Cliente top</td>
+      <td>Chaparro &amp; Asociados S.C.P</td>
+    </tr>
+    <tr>
+      <td>Top 5 clientes (%)</td>
+      <td>45.8%</td>
+    </tr>
+    <tr>
+      <td>Mejor centro coste</td>
+      <td>Comercial</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Visualización interactiva</h2>
+            <div class="plotly-container">
+                <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="28ddd1f1-4c4b-404e-8f15-e4e3cbd55966" class="plotly-graph-div" style="height:950px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("28ddd1f1-4c4b-404e-8f15-e4e3cbd55966")) {                    Plotly.newPlot(                        "28ddd1f1-4c4b-404e-8f15-e4e3cbd55966",                        [{"fill":"tozeroy","fillcolor":"rgba(76, 120, 168, 0.18)","line":{"color":"#4C78A8","width":3},"mode":"lines+markers","name":"Evolución","x":["2024-01-01T00:00:00.000000","2024-02-01T00:00:00.000000","2024-03-01T00:00:00.000000","2024-04-01T00:00:00.000000","2024-05-01T00:00:00.000000","2024-06-01T00:00:00.000000","2024-07-01T00:00:00.000000","2024-08-01T00:00:00.000000","2024-09-01T00:00:00.000000","2024-10-01T00:00:00.000000","2024-11-01T00:00:00.000000","2024-12-01T00:00:00.000000","2025-01-01T00:00:00.000000","2025-02-01T00:00:00.000000","2025-03-01T00:00:00.000000","2025-04-01T00:00:00.000000","2025-05-01T00:00:00.000000","2025-06-01T00:00:00.000000","2025-07-01T00:00:00.000000","2025-08-01T00:00:00.000000","2025-09-01T00:00:00.000000","2025-10-01T00:00:00.000000","2025-11-01T00:00:00.000000","2025-12-01T00:00:00.000000","2026-01-01T00:00:00.000000","2026-02-01T00:00:00.000000","2026-03-01T00:00:00.000000","2026-04-01T00:00:00.000000"],"y":{"dtype":"f8","bdata":"PgrXo3gC+kD2KFyPuk35QLgehet58\u002fpA7FG4HrOhAUFI4XoUj6MqQZqZmZntiPlAmpmZmU5zLkGkcD0KW5D8QClcj8LBYv5AzczMzJ\u002fWGkFnZmZmMuoNQeF6FK5QeyFBexSuR4RwFUHXo3A9py8eQR+F69E9CiFBCtejcOkc\u002f0BxPQrXgXQCQVyPwvXAuPtAcT0K108O80CkcD3KWTkwQRSuR+FSg\u002fxAMzMzM77LGEHNzMzMJL7+QLgehetl3\u002f5A7FG4HkdQAEEK16PwiH0hQSlcj8KpmSRB16NwPc2KJEE="},"type":"scatter","xaxis":"x","yaxis":"y"},{"labels":["Ingresos","Gastos"],"marker":{"colors":["#4C78A8","#F58518"]},"textinfo":"label+percent","values":[4697875.6,5009533.4],"type":"pie","domain":{"x":[0.35555555555555557,0.6444444444444445],"y":[0.625,1.0]}},{"cliponaxis":false,"marker":{"color":"#54A24B"},"name":"Top Categorías","orientation":"h","x":{"dtype":"f8","bdata":"pHA9SrUhPUEK16PwfC82QQAAAACAuDJB7FG4Xmu7MEFcj8L1IHQsQQ=="},"y":["Suministros","Logística","Financiación","Impuestos","Otros"],"type":"bar","xaxis":"x2","yaxis":"y2"},{"cliponaxis":false,"marker":{"color":"#72B7B2"},"name":"Canales","orientation":"h","x":{"dtype":"f8","bdata":"1zTvOEWlzEDoljj1O1nJQFktb4yUl8ZA+aMjZFODwkCzpGF+jcqxQF66SQzOoatA"},"y":["Bizum","Paypal","Transferencia","Efectivo","Tarjeta","SEPA"],"type":"bar","xaxis":"x3","yaxis":"y3"},{"cliponaxis":false,"marker":{"color":"#4C78A8"},"name":"Clientes","orientation":"h","x":{"dtype":"f8","bdata":"AAAAAPYbJEEAAAAADPoaQQAAAAAkhRhBXI\u002fC9aq1FkEAAAAA4PoQQQ=="},"y":["Chaparro & Asociados S.C.P","Hermanos Seco S.L.","Enrique Ripoll Pujol S.A.","DESCONOCIDO","Compañía Lloret & Asociados S.A."],"type":"bar","xaxis":"x4","yaxis":"y4"},{"cliponaxis":false,"marker":{"color":"#ff9A2F"},"name":"ROI","orientation":"h","x":{"dtype":"f8","bdata":"mpmZmZkZOUAAAAAAAAA8QJqZmZmZWUFAZmZmZmYmR0BmZmZmZiZQQGZmZmZm5lFA"},"y":["TI","RRHH","Operaciones","Dirección","Finanzas","Comercial"],"type":"bar","xaxis":"x5","yaxis":"y5"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"geo":{"bgcolor":"rgb(17,17,17)","lakecolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","showlakes":true,"showland":true,"subunitcolor":"#506784"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"dark"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"sliderdefaults":{"bgcolor":"#C8D4E3","bordercolor":"rgb(17,17,17)","borderwidth":1,"tickwidth":0},"ternary":{"aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"xaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,0.2888888888888889],"tickfont":{"color":"#A7B0C0"},"gridcolor":"rgba(255,255,255,0.08)","zerolinecolor":"rgba(255,255,255,0.12)"},"yaxis":{"anchor":"x","domain":[0.625,1.0],"tickfont":{"color":"#A7B0C0"},"gridcolor":"rgba(255,255,255,0.06)","zerolinecolor":"rgba(255,255,255,0.12)"},"xaxis2":{"anchor":"y2","domain":[0.7111111111111111,1.0],"tickfont":{"color":"#A7B0C0"},"gridcolor":"rgba(255,255,255,0.08)","zerolinecolor":"rgba(255,255,255,0.12)"},"yaxis2":{"anchor":"x2","domain":[0.625,1.0],"tickfont":{"color":"#A7B0C0"},"gridcolor":"rgba(255,255,255,0.06)","zerolinecolor":"rgba(255,255,255,0.12)"},"xaxis3":{"anchor":"y3","domain":[0.0,0.2888888888888889],"tickfont":{"color":"#A7B0C0"},"gridcolor":"rgba(255,255,255,0.08)","zerolinecolor":"rgba(255,255,255,0.12)"},"yaxis3":{"anchor":"x3","domain":[0.0,0.375],"tickfont":{"color":"#A7B0C0"},"gridcolor":"rgba(255,255,255,0.06)","zerolinecolor":"rgba(255,255,255,0.12)"},"xaxis4":{"anchor":"y4","domain":[0.35555555555555557,0.6444444444444445],"tickfont":{"color":"#A7B0C0"},"gridcolor":"rgba(255,255,255,0.08)","zerolinecolor":"rgba(255,255,255,0.12)"},"yaxis4":{"anchor":"x4","domain":[0.0,0.375],"tickfont":{"color":"#A7B0C0"},"gridcolor":"rgba(255,255,255,0.06)","zerolinecolor":"rgba(255,255,255,0.12)"},"xaxis5":{"anchor":"y5","domain":[0.7111111111111111,1.0],"tickfont":{"color":"#A7B0C0"},"gridcolor":"rgba(255,255,255,0.08)","zerolinecolor":"rgba(255,255,255,0.12)"},"yaxis5":{"anchor":"x5","domain":[0.0,0.375],"tickfont":{"color":"#A7B0C0"},"gridcolor":"rgba(255,255,255,0.06)","zerolinecolor":"rgba(255,255,255,0.12)"},"annotations":[{"font":{"size":13,"color":"#F5F7FB"},"showarrow":false,"text":"Evolución Mensual","x":0.14444444444444446,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":13,"color":"#F5F7FB"},"showarrow":false,"text":"Ingresos vs Gastos","x":0.5,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":13,"color":"#F5F7FB"},"showarrow":false,"text":"Top Categorías","x":0.8555555555555556,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":13,"color":"#F5F7FB"},"showarrow":false,"text":"Eficiencia Canales (€\u002ftransacción)","x":0.14444444444444446,"xanchor":"center","xref":"paper","y":0.375,"yanchor":"bottom","yref":"paper"},{"font":{"size":13,"color":"#F5F7FB"},"showarrow":false,"text":"Top 5 Clientes por Ingreso","x":0.5,"xanchor":"center","xref":"paper","y":0.375,"yanchor":"bottom","yref":"paper"},{"font":{"size":13,"color":"#F5F7FB"},"showarrow":false,"text":"ROI por Centro de Coste (%)","x":0.8555555555555556,"xanchor":"center","xref":"paper","y":0.375,"yanchor":"bottom","yref":"paper"}],"font":{"color":"#F5F7FB","family":"Arial"},"margin":{"l":20,"r":20,"t":60,"b":20},"uniformtext":{"minsize":14,"mode":"hide"},"height":950,"showlegend":false,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    )                };            </script>        </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Conclusiones clave</h2>
+            
+<ul>
+    <li>La actividad se concentra en pocos segmentos y conviene priorizar los más rentables.</li>
+    <li>El canal más eficiente debe tener mayor peso en la estrategia operativa.</li>
+    <li>El riesgo de concentración en clientes debe revisarse si el Top 5 supera el umbral esperado.</li>
+    <li>Los centros de coste con ROI bajo requieren revisión y posible ajuste de recursos.</li>
+</ul>
+
+        </div>
+    </div>
+</body>
+</html>

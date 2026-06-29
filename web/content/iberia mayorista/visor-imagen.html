@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vista de imagen</title>
+  <link rel="stylesheet" href="../../css/tokens.css" />
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/layout.css" />
+</head>
+<body>
+  <main class="image-viewer-page">
+    <a href="javascript:history.back()" class="image-viewer-link" aria-label="Regresar al proyecto">
+      <img id="fullImage" class="image-viewer-img" alt="Imagen ampliada">
+    </a>
+
+    <div class="image-viewer-note">clic sobre la imagen para regresar</div>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const img = params.get("img");
+    const alt = params.get("alt") || "Imagen ampliada";
+    const fullImage = document.getElementById("fullImage");
+    fullImage.src = img || "#";
+    fullImage.alt = alt;
+  </script>
+</body>
+</html>

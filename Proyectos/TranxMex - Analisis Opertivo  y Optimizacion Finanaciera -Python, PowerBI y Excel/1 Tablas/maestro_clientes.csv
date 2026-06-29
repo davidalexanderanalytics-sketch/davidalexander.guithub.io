@@ -1,0 +1,101 @@
+﻿entidad_id;nombre;tipo_entidad;sector;pais;ciudad;segmento
+ENT-0001;Hermanos Lucena S.L.;Ambos;Industria;Portugal;Almería;Pyme
+ENT-0002;Transportes UDN S.Com.;Cliente;Retail;Portugal;Álava;Mid-Market
+ENT-0003;Logística OVKF S.L.N.E;Proveedor;Banca;Francia;Toledo;Enterprise
+ENT-0004;Sanmartín y asociados S.L.;Proveedor;Banca;Italia;Huesca;Enterprise
+ENT-0005;Marcelo Torrijos Millán S.Coop.;Ambos;Retail;Italia;Ceuta;Pyme
+ENT-0006;Banco Osorio S.Com.;Cliente;Banca;España;Guadalajara;Mid-Market
+ENT-0007;Silva y Sobrino S.Coop.;Proveedor;Retail;Alemania;Valencia;Mid-Market
+ENT-0008;Rivas y Amat S.L.N.E;Cliente;Tecnología;España;Jaén;Pyme
+ENT-0009;Servicios Pavón S.A.;Ambos;Banca;Portugal;Burgos;Mid-Market
+ENT-0010;Fábrica Bustamante S.A.;Ambos;Tecnología;Alemania;Burgos;Pyme
+ENT-0011;Manufacturas Figuerola & Asociados S.Coop.;Ambos;Industria;Portugal;Granada;Enterprise
+ENT-0012;Hotel Falcón y asociados S.Coop.;Ambos;Tecnología;Alemania;Las Palmas;Mid-Market
+ENT-0013;Cuesta y Torrent S.L.N.E;Proveedor;Retail;Francia;Huelva;Mid-Market
+ENT-0014;Comercializadora KFH S.Coop.;Ambos;Tecnología;Francia;Zaragoza;Enterprise
+ENT-0015;Soluciones del Sur S.A.;Cliente;Retail;Portugal;Santa Cruz de Tenerife;Enterprise
+ENT-0016;Manufacturas Mercader S.L.;Cliente;Tecnología;Portugal;Salamanca;Mid-Market
+ENT-0017;Desarrollo OLPS S.Com.;Proveedor;Industria;España;Asturias;Pyme
+ENT-0018;Hnos Pelayo S.Com.;Ambos;Industria;Francia;Guadalajara;Pyme
+ENT-0019;Logística del Sur S.L.;Cliente;Tecnología;Portugal;Ourense;Pyme
+ENT-0020;Ferreras & Asociados S.L.N.E;Proveedor;Tecnología;Francia;Teruel;Mid-Market
+ENT-0021;Industrias del Sur S.Coop.;Proveedor;Industria;Italia;Guadalajara;Enterprise
+ENT-0022;Restauración GE S.Coop.;Ambos;Tecnología;Portugal;Asturias;Enterprise
+ENT-0023;Roque Ferrando Llorente S.L.;Cliente;Industria;Italia;Vizcaya;Enterprise
+ENT-0024;Hnos Huerta S.A.T.;Proveedor;Servicios;Alemania;Guadalajara;Mid-Market
+ENT-0025;Tolosa & Asociados S.L.;Ambos;Servicios;Portugal;Madrid;Mid-Market
+ENT-0026;Folch & Asociados S.L.N.E;Cliente;Servicios;Italia;Girona;Enterprise
+ENT-0027;Grupo Zabaleta S.L.;Ambos;Banca;España;Ciudad;Pyme
+ENT-0028;Rocha y Alba S.Com.;Proveedor;Retail;Portugal;Burgos;Pyme
+ENT-0029;Banca Privada Andres y asociados S.A.;Proveedor;Servicios;Italia;Vizcaya;Pyme
+ENT-0030;Supermercados Piña S.Coop.;Cliente;Retail;Francia;Valladolid;Mid-Market
+ENT-0031;Campos y asociados S.Coop.;Cliente;Tecnología;Italia;Teruel;Pyme
+ENT-0032;Lucas Cánovas Castells S.Com.;Ambos;Industria;Portugal;Baleares;Pyme
+ENT-0033;Hermanos Tejada S.Com.;Cliente;Retail;Portugal;Toledo;Pyme
+ENT-0034;Amigó y Rovira S.L.;Ambos;Banca;Italia;Cádiz;Enterprise
+ENT-0035;Aramburu y asociados S.Com.;Cliente;Industria;Francia;Málaga;Pyme
+ENT-0036;Grupo Valdés S.A.;Ambos;Retail;Alemania;Barcelona;Pyme
+ENT-0037;Construcción Yáñez S.A.;Proveedor;Servicios;Portugal;Ávila;Pyme
+ENT-0038;Palau y asociados S.A.;Cliente;Tecnología;Portugal;Valladolid;Pyme
+ENT-0039;Transportes CBH S.Com.;Cliente;Retail;España;Navarra;Enterprise
+ENT-0040;Fábrica INT S.A.T.;Proveedor;Banca;Portugal;Segovia;Mid-Market
+ENT-0041;Familia Gomis S.Coop.;Ambos;Banca;Alemania;Ceuta;Enterprise
+ENT-0042;Despacho Globales S.Coop.;Proveedor;Industria;Italia;Jaén;Enterprise
+ENT-0043;Aliaga y Viana S.L.;Proveedor;Industria;España;Albacete;Mid-Market
+ENT-0044;Bayo y Arjona S.A.D;Cliente;Banca;España;Castellón;Enterprise
+ENT-0045;Transportes Avanzadas S.Com.;Cliente;Servicios;Portugal;Palencia;Enterprise
+ENT-0046;Verdú & Asociados S.Com.;Cliente;Retail;Italia;Murcia;Mid-Market
+ENT-0047;Hermanos Larrañaga S.Coop.;Ambos;Industria;Alemania;Cáceres;Enterprise
+ENT-0048;Infraestructuras Internacionales S.A.;Proveedor;Servicios;Alemania;La Coruña;Mid-Market
+ENT-0049;Instalaciones BFH S.Coop.;Ambos;Banca;Italia;Castellón;Pyme
+ENT-0050;Consultoría Arnaiz S.Com.;Proveedor;Retail;Alemania;Valencia;Mid-Market
+ENT-0051;Finanzas Inteligentes S.L.L.;Cliente;Banca;Italia;Palencia;Enterprise
+ENT-0052;Promociones Silva & Asociados S.L.;Cliente;Banca;Italia;Ourense;Pyme
+ENT-0053;Fábrica Vicente & Asociados S.Com.;Ambos;Servicios;Alemania;Cádiz;Pyme
+ENT-0054;Fábregas y asociados S.L.N.E;Ambos;Industria;Italia;Toledo;Mid-Market
+ENT-0055;Seco y asociados S.Coop.;Ambos;Industria;Italia;Madrid;Pyme
+ENT-0056;Chelo Machado Hurtado S.A.;Cliente;Tecnología;Italia;Álava;Pyme
+ENT-0057;Familia Alba S.L.N.E;Proveedor;Retail;España;Granada;Pyme
+ENT-0058;Rico Cuervo Cabanillas S.A.;Proveedor;Servicios;Francia;Segovia;Pyme
+ENT-0059;Suministros del Levante S.A.;Cliente;Tecnología;Portugal;Segovia;Enterprise
+ENT-0060;Hermanos Arana S.L.N.E;Cliente;Retail;Portugal;Burgos;Enterprise
+ENT-0061;Talleres Fuentes & Asociados S.L.N.E;Cliente;Tecnología;Portugal;Lugo;Enterprise
+ENT-0062;Alimentación Capdevila S.A.;Cliente;Retail;Portugal;Lleida;Mid-Market
+ENT-0063;Inmobiliaria Alsina y asociados S.A.;Cliente;Servicios;Alemania;Castellón;Pyme
+ENT-0064;Servicios TBWY S.A.;Ambos;Industria;España;Ourense;Pyme
+ENT-0065;Familia Lucas S.L.;Proveedor;Retail;Francia;Cantabria;Pyme
+ENT-0066;Banca Privada Llabrés & Asociados S.A.U;Proveedor;Tecnología;Italia;Zaragoza;Enterprise
+ENT-0067;Familia Rozas S.Coop.;Cliente;Tecnología;Italia;Zamora;Enterprise
+ENT-0068;Comercial Inteligentes S.Com.;Proveedor;Banca;España;Lleida;Mid-Market
+ENT-0069;Candelas Céspedes Perea S.L.;Proveedor;Servicios;España;Toledo;Enterprise
+ENT-0070;Logística Oliver S.Com.;Cliente;Retail;Alemania;Huesca;Mid-Market
+ENT-0071;Ovidio Manzano Coloma S.L.L.;Proveedor;Servicios;España;Soria;Mid-Market
+ENT-0072;Palomino y Rosales S.A.;Cliente;Banca;Italia;Barcelona;Pyme
+ENT-0073;Palmer y asociados S.Coop.;Ambos;Retail;Portugal;Alicante;Pyme
+ENT-0074;Velázquez & Asociados S.Coop.;Ambos;Banca;Portugal;Zaragoza;Enterprise
+ENT-0075;Fábrica Prieto S.A.;Ambos;Servicios;Alemania;Baleares;Mid-Market
+ENT-0076;Familia Acosta S.C.P;Proveedor;Banca;Francia;Valencia;Mid-Market
+ENT-0077;Manufacturas del Sur S.A.;Proveedor;Servicios;Italia;Navarra;Pyme
+ENT-0078;Zabala y Pozo S.A.T.;Ambos;Industria;Portugal;Valencia;Pyme
+ENT-0079;Camino y Gonzalez S.L.;Ambos;Servicios;España;Burgos;Pyme
+ENT-0080;Alimentación Españolas S.Coop.;Ambos;Industria;España;Tarragona;Pyme
+ENT-0081;Industrias Ramis y asociados S.L.L.;Cliente;Tecnología;Alemania;Cantabria;Pyme
+ENT-0082;Familia Anguita S.Com.;Proveedor;Retail;Italia;Cádiz;Mid-Market
+ENT-0083;Comercializadora XGX S.L.;Cliente;Tecnología;Portugal;Tarragona;Pyme
+ENT-0084;Manufacturas Pons y asociados S.A.D;Proveedor;Servicios;Francia;Salamanca;Mid-Market
+ENT-0085;Fabiola Arnaiz Tur S.L.N.E;Cliente;Retail;Portugal;Guadalajara;Enterprise
+ENT-0086;Anguita y asociados S.L.;Proveedor;Tecnología;Italia;Valladolid;Mid-Market
+ENT-0087;Suministros ETXJ S.L.U.;Proveedor;Banca;España;Alicante;Enterprise
+ENT-0088;Martina Bolaños Taboada S.C.P;Proveedor;Retail;Francia;Ávila;Mid-Market
+ENT-0089;Construcción del Norte S.Com.;Proveedor;Industria;Alemania;Ciudad;Enterprise
+ENT-0090;Andrés Moraleda Menendez S.Coop.;Cliente;Industria;Francia;Castellón;Enterprise
+ENT-0091;Bustamante y Alarcón S.L.;Ambos;Tecnología;Francia;Málaga;Pyme
+ENT-0092;Bruno Vallés Escudero S.Coop.;Ambos;Industria;Alemania;Zaragoza;Mid-Market
+ENT-0093;Hermanos Carpio S.L.;Proveedor;Retail;Alemania;Cádiz;Enterprise
+ENT-0094;Lázaro Cánovas Ariño S.C.P;Cliente;Banca;Alemania;Las Palmas;Pyme
+ENT-0095;Despacho KZ S.A.;Cliente;Retail;Francia;Vizcaya;Mid-Market
+ENT-0096;Arranz y Mate S.A.;Cliente;Servicios;Italia;Soria;Pyme
+ENT-0097;Jenaro Sales Carmona S.A.;Cliente;Industria;Italia;Barcelona;Enterprise
+ENT-0098;Hnos Valderrama S.Com.;Cliente;Tecnología;Italia;Albacete;Mid-Market
+ENT-0099;Camino y asociados S.Coop.;Ambos;Servicios;Italia;Las Palmas;Pyme
+ENT-0100;Bautista y Bas S.A.;Cliente;Banca;España;Lugo;Mid-Market
